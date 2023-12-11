@@ -1,6 +1,4 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.EventBus;
-using Microsoft.Extensions.EventBus.RabbitMQ;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
@@ -13,7 +11,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace MyStack.EventBus.RabbitMQ
+namespace Microsoft.Extensions.EventBus.RabbitMQ
 {
     public class RabbitMQConsumerServer : IConsumerServer
     {
@@ -58,7 +56,7 @@ namespace MyStack.EventBus.RabbitMQ
                 _cache.Add(routingKey, subscription.EventType);
                 _logger?.LogInformation($"Bind routing key named {routingKey} to queue named {Options.QueueOptions.Name} ");
             }
-           
+
 
             EventingBasicConsumer consumer = new EventingBasicConsumer(_channel);
             _channel.BasicConsume(queue: Options.QueueOptions.Name, autoAck: false, consumer);
@@ -105,7 +103,7 @@ namespace MyStack.EventBus.RabbitMQ
                 }
             };
             return Task.CompletedTask;
-        } 
+        }
 
         private IList<SubscriptionInfo> GetSubscriptionInfos(string routingKey)
         {

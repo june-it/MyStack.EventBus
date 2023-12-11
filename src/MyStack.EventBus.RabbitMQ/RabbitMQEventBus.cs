@@ -1,6 +1,4 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.EventBus;
-using Microsoft.Extensions.EventBus.RabbitMQ;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
@@ -13,7 +11,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace MyStack.EventBus.RabbitMQ
+namespace Microsoft.Extensions.EventBus.RabbitMQ
 {
     public class RabbitMQEventBus : IEventBus
     {

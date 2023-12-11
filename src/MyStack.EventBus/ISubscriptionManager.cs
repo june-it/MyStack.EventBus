@@ -7,6 +7,6 @@ namespace Microsoft.Extensions.EventBus
     {
         IList<SubscriptionInfo> GetSubscriptions(Type eventType);
         IList<SubscriptionInfo> GetAllSubscriptions();
-    } 
+    }
 
 }

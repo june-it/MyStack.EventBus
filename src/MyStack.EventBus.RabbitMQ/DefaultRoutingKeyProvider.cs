@@ -1,6 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
-using MyStack.EventBus.RabbitMQ;
 using System;
 using System.Reflection;
 

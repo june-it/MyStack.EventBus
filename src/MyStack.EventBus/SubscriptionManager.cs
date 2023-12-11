@@ -17,7 +17,7 @@ namespace Microsoft.Extensions.EventBus
             if (_subscriptions.TryGetValue(eventType, out var subscriptions))
                 return subscriptions;
             return null;
-        } 
+        }
         public void Register(List<SubscriptionInfo> subscriptions)
         {
             if (subscriptions == null)

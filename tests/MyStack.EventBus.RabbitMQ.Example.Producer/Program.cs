@@ -5,7 +5,6 @@ using Microsoft.Extensions.EventBus.RabbitMQ;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using MyStack.EventBus.RabbitMQ.Example;
-using System.Reflection;
 
 namespace Dragon.MessageTransport.RabbitMQ.Example.Producer
 {

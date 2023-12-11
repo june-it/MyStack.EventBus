@@ -1,5 +1,4 @@
 ﻿using Microsoft.Extensions.Options;
-using MyStack.EventBus.RabbitMQ;
 using RabbitMQ.Client;
 
 namespace Microsoft.Extensions.EventBus.RabbitMQ

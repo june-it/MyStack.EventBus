@@ -4,10 +4,10 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
-    <PackageId>Dragon.MessageTransport.RabbitMQ</PackageId>
-    <Title>Dragon.MessageTransport.RabbitMQ</Title>
+    <PackageId>MyStack.EventBus.RabbitMQ</PackageId>
+    <Title>MyStack.EventBus.RabbitMQ</Title>
     <Description>This package provides an API for implementing event bus libraries using RabbitMQ</Description>
-    <RootNamespace>MyStack.EventBus.RabbitMQ</RootNamespace>
+    <RootNamespace>Microsoft.Extensions.EventBus.RabbitMQ</RootNamespace>
   </PropertyGroup>
   
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

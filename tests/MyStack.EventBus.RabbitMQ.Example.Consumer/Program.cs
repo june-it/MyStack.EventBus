@@ -1,10 +1,8 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.EventBus;
 using Microsoft.Extensions.EventBus.RabbitMQ;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using MyStack.EventBus.RabbitMQ.Example.Consumer;
 using System.Reflection;
 
 namespace Dragon.MessageTransport.RabbitMQ.Example.Consumer
@@ -26,7 +24,7 @@ namespace Dragon.MessageTransport.RabbitMQ.Example.Consumer
                        logging.AddConsole();
                    });
                    services.AddEventBus(builder =>
-                   { 
+                   {
                        builder.AddRabbtMQ(configure =>
                        {
                            configure.HostName = "localhost";
@@ -38,7 +36,7 @@ namespace Dragon.MessageTransport.RabbitMQ.Example.Consumer
                            configure.ExchangeOptions.Name = "MyStack";
                            configure.ExchangeOptions.ExchangeType = "topic";
                        });
-                   }, 
+                   },
                    Assembly.GetExecutingAssembly()
                    );
                });

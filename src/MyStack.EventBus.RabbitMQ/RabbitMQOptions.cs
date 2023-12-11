@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace MyStack.EventBus.RabbitMQ
+namespace Microsoft.Extensions.EventBus.RabbitMQ
 {
 
     public class RabbitMQOptions

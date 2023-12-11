@@ -4,6 +4,6 @@ namespace Microsoft.Extensions.EventBus
 {
     public interface IEventBusConfigurator
     {
-        IServiceCollection Services { get; } 
+        IServiceCollection Services { get; }
     }
 }

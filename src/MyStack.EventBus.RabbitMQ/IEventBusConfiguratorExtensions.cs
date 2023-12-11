@@ -1,12 +1,11 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using MyStack.EventBus.RabbitMQ;
 using System;
 
 namespace Microsoft.Extensions.EventBus.RabbitMQ
 {
     public static class IEventBusConfiguratorExtensions
     {
-        public static void AddRabbtMQ(this IEventBusConfigurator  configurator, Action<RabbitMQOptions> configure)
+        public static void AddRabbtMQ(this IEventBusConfigurator configurator, Action<RabbitMQOptions> configure)
         {
             var options = new RabbitMQOptions();
             configure.Invoke(options);

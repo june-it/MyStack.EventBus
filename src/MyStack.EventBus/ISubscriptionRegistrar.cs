@@ -3,7 +3,7 @@
 namespace Microsoft.Extensions.EventBus
 {
     public interface ISubscriptionRegistrar
-    { 
+    {
         void Register(List<SubscriptionInfo> subscriptions);
     }
 }

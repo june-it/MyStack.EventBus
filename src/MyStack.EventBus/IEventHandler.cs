@@ -11,7 +11,7 @@ namespace Microsoft.Extensions.EventBus
     /// Represents an event handler interface
     /// </summary>
     /// <typeparam name="TEvent">The type of event</typeparam>
-    public interface IEventHandler<TEvent>: IEventHandler
+    public interface IEventHandler<TEvent> : IEventHandler
         where TEvent : class, IEvent
     {
         Task HandleAsync(TEvent @event, CancellationToken cancellationToken = default);
@@ -21,7 +21,7 @@ namespace Microsoft.Extensions.EventBus
     /// </summary>
     /// <typeparam name="TEvent">The type of event</typeparam>
     /// <typeparam name="TReply">The type of reply</typeparam>
-    public interface IEventHandler<TEvent, TReply>: IEventHandler
+    public interface IEventHandler<TEvent, TReply> : IEventHandler
         where TEvent : class, IEvent<TReply>
         where TReply : class
     {
