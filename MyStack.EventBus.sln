@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C0D58E0D-6AFE-43D4-BA17-6904F1D71B85}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyStack.EventBus.RabbitMQ", "src\MyStack.EventBus.RabbitMQ\MyStack.EventBus.RabbitMQ.csproj", "{6B1D4EFF-A523-4A55-90B0-04CB78B2C78E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sln", "sln", "{AF2B2C7B-8B8F-4449-8B3C-871014C76682}"
+	ProjectSection(SolutionItems) = preProject
+		common.props = common.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{1039F5FB-F798-4B5C-942F-F8773BF65747}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyStack.EventBus", "src\MyStack.EventBus\MyStack.EventBus.csproj", "{E8AEE091-7A8F-4C69-BDFC-D3F51C68DCEE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyStack.EventBus.RabbitMQ.Example", "tests\MyStack.EventBus.RabbitMQ.Example\MyStack.EventBus.RabbitMQ.Example.csproj", "{41624742-99DF-4AF5-8685-4DD19F4EE74E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyStack.EventBus.RabbitMQ.Example.Consumer", "tests\MyStack.EventBus.RabbitMQ.Example.Consumer\MyStack.EventBus.RabbitMQ.Example.Consumer.csproj", "{89BD0A94-FFF7-42DF-81E3-04C9DC268B1E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyStack.EventBus.RabbitMQ.Example.Producer", "tests\MyStack.EventBus.RabbitMQ.Example.Producer\MyStack.EventBus.RabbitMQ.Example.Producer.csproj", "{BDEFD4AE-79F5-4749-8596-58C6208AE0E6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6B1D4EFF-A523-4A55-90B0-04CB78B2C78E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B1D4EFF-A523-4A55-90B0-04CB78B2C78E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B1D4EFF-A523-4A55-90B0-04CB78B2C78E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B1D4EFF-A523-4A55-90B0-04CB78B2C78E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8AEE091-7A8F-4C69-BDFC-D3F51C68DCEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8AEE091-7A8F-4C69-BDFC-D3F51C68DCEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8AEE091-7A8F-4C69-BDFC-D3F51C68DCEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8AEE091-7A8F-4C69-BDFC-D3F51C68DCEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41624742-99DF-4AF5-8685-4DD19F4EE74E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41624742-99DF-4AF5-8685-4DD19F4EE74E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41624742-99DF-4AF5-8685-4DD19F4EE74E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41624742-99DF-4AF5-8685-4DD19F4EE74E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89BD0A94-FFF7-42DF-81E3-04C9DC268B1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89BD0A94-FFF7-42DF-81E3-04C9DC268B1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89BD0A94-FFF7-42DF-81E3-04C9DC268B1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89BD0A94-FFF7-42DF-81E3-04C9DC268B1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDEFD4AE-79F5-4749-8596-58C6208AE0E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDEFD4AE-79F5-4749-8596-58C6208AE0E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDEFD4AE-79F5-4749-8596-58C6208AE0E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDEFD4AE-79F5-4749-8596-58C6208AE0E6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6B1D4EFF-A523-4A55-90B0-04CB78B2C78E} = {C0D58E0D-6AFE-43D4-BA17-6904F1D71B85}
+		{E8AEE091-7A8F-4C69-BDFC-D3F51C68DCEE} = {C0D58E0D-6AFE-43D4-BA17-6904F1D71B85}
+		{41624742-99DF-4AF5-8685-4DD19F4EE74E} = {1039F5FB-F798-4B5C-942F-F8773BF65747}
+		{89BD0A94-FFF7-42DF-81E3-04C9DC268B1E} = {1039F5FB-F798-4B5C-942F-F8773BF65747}
+		{BDEFD4AE-79F5-4749-8596-58C6208AE0E6} = {1039F5FB-F798-4B5C-942F-F8773BF65747}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6214D328-8BAF-4DA4-9074-A6AF52FFA424}
+	EndGlobalSection
+EndGlobal
