@@ -26,7 +26,7 @@ namespace Microsoft.Extensions.EventBus.RabbitMQ
             _routingKeyProvider = serviceProvider.GetService<IRoutingKeyProvider>();
             var options = serviceProvider.GetRequiredService<IOptions<RabbitMQOptions>>().Value;
             _exchangeName = options.ExchangeOptions.Name;
-            _routingKeyPrefix = options.RoutingKeyPrifix;
+            _routingKeyPrefix = options.RoutingKeyPrefix;
             var loggerFactory = serviceProvider.GetService<ILoggerFactory>();
             _logger = loggerFactory?.CreateLogger<RabbitMQEventBus>();
         }

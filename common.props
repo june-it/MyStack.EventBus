@@ -1,11 +1,11 @@
 <Project>
   <PropertyGroup>
-    <Version>0.0.1-beta1</Version>
+    <Version>0.0.1-beta2</Version>
     <NoWarn>$(NoWarn);CS1591</NoWarn>
     <Authors>June</Authors>
     <Company>June</Company>
     <PackageIcon>icon.png</PackageIcon>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageReadmeFile>NUGET.md</PackageReadmeFile>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/june-it/MyStack.EventBus.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>

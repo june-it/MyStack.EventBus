@@ -11,7 +11,7 @@ namespace Microsoft.Extensions.EventBus.RabbitMQ
         public DefaultRoutingKeyProvider(IServiceProvider serviceProvider)
         {
             var options = serviceProvider.GetRequiredService<IOptions<RabbitMQOptions>>();
-            _routingKeyPrefix = options.Value.RoutingKeyPrifix;
+            _routingKeyPrefix = options.Value.RoutingKeyPrefix;
         }
         public string GetRoutingKey(Type eventType)
         {
