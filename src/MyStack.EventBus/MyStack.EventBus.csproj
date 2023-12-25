@@ -4,8 +4,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
-    <RootNamespace>Microsoft.Extensions.EventBus</RootNamespace>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RootNamespace>Microsoft.Extensions.EventBus</RootNamespace> 
     <Description>This package provides the APIs for using event bus library</Description>
     <Title>MyStack.EventBus.Abstractions</Title>
     <PackageId>MyStack.EventBus</PackageId>
